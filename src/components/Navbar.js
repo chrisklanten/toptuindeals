@@ -1,15 +1,15 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import github from '../img/github-icon.svg'
-import logo from '../img/logo.svg'
+import React from "react";
+import { Link } from "gatsby";
+import logo from "../img/logo.svg";
+import { BiMenu } from "react-icons/bi";
 
 const Navbar = class extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       active: false,
-      navBarActiveClass: '',
-    }
+      navBarActiveClass: "",
+    };
   }
 
   toggleHamburger = () => {
@@ -23,76 +23,83 @@ const Navbar = class extends React.Component {
         // set the class in state for the navbar accordingly
         this.state.active
           ? this.setState({
-              navBarActiveClass: 'is-active',
+              navBarActiveClass: "is-active",
             })
           : this.setState({
-              navBarActiveClass: '',
-            })
+              navBarActiveClass: "",
+            });
       }
-    )
-  }
+    );
+  };
+
+  onLinkClick = (e) => {
+    e.preventDefault();
+    const splittedUrl = e.target.href.split("/");
+    const segment = splittedUrl[splittedUrl.length - 1];
+    const element = document.querySelector(segment);
+    const topPos = element.getBoundingClientRect().top;
+
+    window.scroll({
+      top: topPos,
+      behavior: "smooth", // чтобы было плавным
+    });
+  };
 
   render() {
     return (
       <nav
-        className="navbar is-transparent"
+        className="py-6 shadow-lg"
         role="navigation"
         aria-label="main-navigation"
       >
-        <div className="container">
-          <div className="navbar-brand">
-            <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
+        <div className="menuContainer mx-auto block sm:flex items-center px-6 lg:px-0">
+          <div className="navbar-brand flex items-center">
+            <Link to="/home" className="" title="Logo">
+              <img
+                src={logo}
+                alt="Evisie Consultancy"
+                className="w-32 md:w-40 "
+              />
             </Link>
             {/* Hamburger menu */}
             <div
-              className={`navbar-burger burger ${this.state.navBarActiveClass}`}
+              className={`ml-auto sm:hidden ${this.state.navBarActiveClass}`}
               data-target="navMenu"
+              role="button"
+              tabIndex={"0"}
               onClick={() => this.toggleHamburger()}
+              onKeyDown={() => this.toggleHamburger()}
             >
-              <span />
-              <span />
-              <span />
+              <BiMenu className="text-2xl" />
             </div>
           </div>
           <div
             id="navMenu"
-            className={`navbar-menu ${this.state.navBarActiveClass}`}
+            className={`ml-auto flex ${this.state.navBarActiveClass}`}
           >
             <div className="navbar-start has-text-centered">
-              <Link className="navbar-item" to="/about">
-                About
+              <Link className="navbar-item px-3 pt-4 sm:pt-0" to="/home">
+                Home
               </Link>
-              <Link className="navbar-item" to="/products">
-                Products
+              <Link className="navbar-item px-3" to="/diensten">
+                Diensten
               </Link>
-              <Link className="navbar-item" to="/blog">
-                Blog
+              <Link className="navbar-item px-3" to="/over-evisie">
+                Over EvisieConsultancy
               </Link>
-              <Link className="navbar-item" to="/contact">
+              <Link
+                onClick={this.onLinkClick}
+                className="navbar-item rounded py-2 pyx-4 bg-evisie-yellow hover:bg-evisie-yellow-100 text-white font-bold no-underline hover:no-underline transition duration-100 text-center"
+                to="/#contact"
+              >
                 Contact
               </Link>
-              <Link className="navbar-item" to="/contact/examples">
-                Form Examples
-              </Link>
-            </div>
-            <div className="navbar-end has-text-centered">
-              <a
-                className="navbar-item"
-                href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="icon">
-                  <img src={github} alt="Github" />
-                </span>
-              </a>
             </div>
           </div>
         </div>
       </nav>
-    )
+    );
   }
-}
+};
 
-export default Navbar
+export default Navbar;
