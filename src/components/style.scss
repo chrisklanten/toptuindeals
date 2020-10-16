@@ -1,18 +1,24 @@
 @tailwind base;
 
-h1 {
+h1,
+.h1 {
+  @apply text-5xl leading-tight my-4;
+}
+h2,
+.h2 {
+  @apply text-4xl leading-tight my-4;
+}
+h3,
+.h3 {
   @apply text-3xl leading-tight my-4;
-}
-h2 {
-  @apply text-2xl leading-tight my-4;
-}
-h3 {
-  @apply text-xl leading-tight my-4;
 }
 h4,
 h5,
-h6 {
-  @apply text-lg leading-tight my-4;
+h6,
+.h4,
+.h5,
+.h6 {
+  @apply text-2xl leading-tight my-4;
 }
 a {
   @apply text-blue-600 underline;
@@ -28,6 +34,7 @@ h6 {
 }
 
 .container {
+  @apply px-8;
   margin: 0 auto;
   max-width: 1280px;
 }

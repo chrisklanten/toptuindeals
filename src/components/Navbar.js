@@ -48,19 +48,12 @@ const Navbar = class extends React.Component {
   render() {
     return (
       <nav
-        className="py-6 shadow-lg"
+        className="py-4 shadow-lg"
         role="navigation"
         aria-label="main-navigation"
       >
-        <div className="menuContainer mx-auto block sm:flex items-center px-6 lg:px-0">
+        <div className="menuContainer justify-center mx-auto block sm:flex items-center px-6 lg:px-0">
           <div className="navbar-brand flex items-center">
-            <Link to="/home" className="" title="Logo">
-              <img
-                src={logo}
-                alt="Evisie Consultancy"
-                className="w-32 md:w-40 "
-              />
-            </Link>
             {/* Hamburger menu */}
             <div
               className={`ml-auto sm:hidden ${this.state.navBarActiveClass}`}
@@ -75,25 +68,56 @@ const Navbar = class extends React.Component {
           </div>
           <div
             id="navMenu"
-            className={`ml-auto flex ${this.state.navBarActiveClass}`}
+            className={`justify-center flex ${this.state.navBarActiveClass}`}
           >
-            <div className="navbar-start has-text-centered">
-              <Link className="navbar-item px-3 pt-4 sm:pt-0" to="/home">
-                Home
-              </Link>
-              <Link className="navbar-item px-3" to="/diensten">
-                Diensten
-              </Link>
-              <Link className="navbar-item px-3" to="/over-evisie">
-                Over EvisieConsultancy
-              </Link>
-              <Link
-                onClick={this.onLinkClick}
-                className="navbar-item rounded py-2 pyx-4 bg-evisie-yellow hover:bg-evisie-yellow-100 text-white font-bold no-underline hover:no-underline transition duration-100 text-center"
-                to="/#contact"
-              >
-                Contact
-              </Link>
+            <div className="navbar-start has-text-centered flex items-center">
+              <div>
+                <Link
+                  className="navbar-item px-3 pt-4 sm:pt-0 font-bold text-toptuindeals-darkgreen"
+                  to="/#openingstijden"
+                  onClick={this.onLinkClick}
+                >
+                  Openingstijden
+                </Link>
+                <Link
+                  className="navbar-item px-3 font-bold text-toptuindeals-darkgreen"
+                  to="/#over"
+                  onClick={this.onLinkClick}
+                >
+                  Over TopTuindeals
+                </Link>
+              </div>
+              <div className="-mb-16">
+                <Link to="/" onClick={this.onLinkClick} title="Logo">
+                  <img
+                    src={logo}
+                    alt="TopTuinDeals Oudenbosch"
+                    className="w-32 md:w-40 "
+                  />
+                </Link>
+              </div>
+              <div>
+                <Link
+                  className="navbar-item px-3 font-bold text-toptuindeals-darkgreen"
+                  to="/over-evisie"
+                >
+                  Laatste nieuws
+                </Link>
+                <Link
+                  onClick={this.onLinkClick}
+                  className="navbar-item rounded py-2 pyx-4 font-bold text-toptuindeals-darkgreen"
+                  to="/#route"
+                >
+                  Route
+                </Link>
+                <Link
+                  onClick={this.onLinkClick}
+                  className="navbar-item rounded py-2 pyx-4 font-bold text-toptuindeals-darkgreen"
+                  to="/#contact"
+                >
+                  Contact
+                </Link>
+              </div>
             </div>
           </div>
         </div>

@@ -12,8 +12,9 @@ module.exports = {
       },
       colors: {
         toptuindeals: {
-          lightgreen: "#F8BC4C",
-          darkgreen: "#202A35",
+          lightgreen: "#86B111",
+          darkgreen: "#44793B",
+          bggreen: "#CCD6CA",
           gray: "#C2D2D7",
         },
       },
