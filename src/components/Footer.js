@@ -4,11 +4,11 @@ const Footer = class extends React.Component {
   render() {
     return (
       <>
-        <footer className="-mt-6 pt-6 bg-evisie-black z-0 px-8 sm:px-0">
+        <footer className="pt-6 bg-toptuindeals-bgdarkgreen z-0 px-8 sm:px-0">
           <div className="container box-border sm:mx-auto">
             <div className="flex">
               <p className="text-xs md:text-base text-white font-bold py-4">
-                © {new Date().getFullYear()} Evisie Consultancy
+                © {new Date().getFullYear()} Top Tuin Deals
               </p>
               <p className="text-xs md:text-base text-white font-bold py-4 ml-auto flex items-center">
                 Made with&nbsp;<span id="heart" className="block"></span>

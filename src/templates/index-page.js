@@ -1,12 +1,12 @@
-import React, { useEffect } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Img from "gatsby-image";
-import { FaCheck, FaFacebook, FaGooglePlus, FaGoogle } from "react-icons/fa";
+import { FaCheck, FaFacebook, FaGoogle } from "react-icons/fa";
 
 import hero from "../img/toptuindeals_hero.jpg";
 
-import { FaMapMarkerAlt, FaPhoneAlt, FaLinkedin } from "react-icons/fa";
+import { FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 
 import ContactForm from "../pages/contact/index";
 import Layout from "../components/Layout";
@@ -288,9 +288,9 @@ export const IndexPageTemplate = ({ frontmatter }) => {
           width="100%"
           height="100%"
           frameBorder="0"
+          title="Locatie toptuindeals"
           allowFullScreen=""
           aria-hidden="false"
-          tabIndex="0"
         ></iframe>
         <div
           className="rounded-lg shadow-lg bg-white p-8 absolute"
@@ -325,30 +325,41 @@ export const IndexPageTemplate = ({ frontmatter }) => {
         </div>
       </section>
 
-      <section id="contact" className="-mt-6 px-8 sm:px-0 relative">
+      <section
+        id="contact"
+        className="px-8 sm:px-0 relative bg-toptuindeals-bgdarkgreen"
+      >
         <div className="container box-border sm:mx-auto">
           <div
             data-sal="slide-up"
             data-sal-delay="50"
             data-sal-easing="ease"
             data-sal-duration="300"
-            className="rounded-sm shadow-2xl p-8 sm:p-16 bg-white sm:flex"
+            className="p-8 sm:p-16 bg-toptuindeals-bgdarkgreen sm:flex"
           >
             <div className="w-full mr-3">
-              <h3>{frontmatter.contact.title}</h3>
-              <p className="mb-6">{frontmatter.contact.intro}</p>
+              <h3 className="text-white">{frontmatter.contact.title}</h3>
+              <p className="mb-6 text-white">{frontmatter.contact.intro}</p>
               <ul>
-                <li className="text-black font-bold flex items-center mb-2">
-                  <FaFacebook className="text-evisie-yellow mr-3" />
-                  Volg ons op facebook!
+                <li className="text-white font-bold flex items-center mb-2">
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/toptuindeals"
+                    title="Volg toptuindeals op facebook!"
+                    rel="noreferrer"
+                    className="no-underline text-white font-bold flex items-center"
+                  >
+                    <FaFacebook className="text-white mr-3" />
+                    Volg ons op facebook!
+                  </a>
                 </li>
-                <li className="text-black font-bold flex items-center mb-2">
-                  <FaGoogle className="text-evisie-yellow mr-3" />
+                <li className="text-white font-bold flex items-center mb-2">
+                  <FaGoogle className="text-white mr-3" />
 
                   <a
                     target="_blank"
-                    className="no-underline text-black font-bold flex items-center"
-                    href="tel:+31627201455"
+                    className="no-underline text-white font-bold flex items-center"
+                    href="https://www.google.com/maps/place/TopTuinDeals/@51.58627,4.565034,15z/data=!4m5!3m4!1s0x0:0x339a3b4ae849423d!8m2!3d51.58627!4d4.565034"
                     rel="noreferrer"
                   >
                     Laat een review achter op Google!

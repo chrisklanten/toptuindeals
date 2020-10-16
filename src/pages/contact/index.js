@@ -53,7 +53,7 @@ export default class ContactForm extends React.Component {
               </label>
             </div>
             <div className="field mb-2 w-full">
-              <label className="label" htmlFor={"name"}>
+              <label className="label text-white" htmlFor={"name"}>
                 Naam
               </label>
               <div className="control w-full">
@@ -68,7 +68,7 @@ export default class ContactForm extends React.Component {
               </div>
             </div>
             <div className="field mb-2 w-full">
-              <label className="label" htmlFor={"email"}>
+              <label className="label text-white" htmlFor={"email"}>
                 Email
               </label>
               <div className="control">
@@ -83,7 +83,7 @@ export default class ContactForm extends React.Component {
               </div>
             </div>
             <div className="field mb-2 w-full">
-              <label className="label" htmlFor={"message"}>
+              <label className="label text-white" htmlFor={"message"}>
                 Bericht
               </label>
               <div className="control">
@@ -98,7 +98,7 @@ export default class ContactForm extends React.Component {
             </div>
             <div className="field">
               <button
-                className="rounded-sm transition ease-linear duration-200 inline-block py-3 px-8  button is-link bg-evisie-yellow hover:bg-evisie-yellow-100 font-bold text-white w-full"
+                className="rounded-sm transition ease-linear duration-200 inline-block py-3 px-8  button is-link bg-toptuindeals-darkgreen hover:bg-toptuindeals-lightgreen font-bold text-white w-full"
                 type="submit"
               >
                 Verstuur
