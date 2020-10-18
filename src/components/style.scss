@@ -121,13 +121,13 @@ h6 {
 }
 
 .location {
-  @screen sm {
+  @screen md {
     height: 375px;
   }
 }
 
 .location-card {
-  @screen sm {
+  @screen md {
     left: 10%;
     top: 50%;
     transform: translateY(-50%);
