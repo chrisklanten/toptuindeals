@@ -7,20 +7,23 @@ usps:
 intro:
   title: Waarom Top Tuin Deals?
   text: >-
-    Bij Top Tuin Deals vind je de beste aanbiedingen op tuinmeubels voor binnen én buiten. Ook bestaat ons assortiment uit massieve boomstamtafels voor binnen en buiten, waardoor uw tuin, terras of overkapping er weer als nieuw bij staat.
+    Bij Top Tuin Deals vind je de beste aanbiedingen op tuinmeubels voor binnen
+    én buiten. Ook bestaat ons assortiment uit massieve boomstamtafels voor
+    binnen en buiten, waardoor uw tuin, terras of overkapping er weer als nieuw
+    bij staat.
 
     Bij uw bezoek krijgt u de volledige aandag zodat we samen de beste tuinmeubelen voor uw situatie kunnen uit zoeken. We heten u van harte welkom, de koffie staat klaar!
   openinghours:
     monday:
       monOpen: true
-      monOpenAt: 10h00
-      monClosedAt: 17h00
+      monOpenAt: "10.00"
+      monClosedAt: "17.00"
     tuesday:
-      tueOpen: true
+      tueOpen: false
       tueOpenAt: 10h00
       tueClosedAt: 17h00
     wednesday:
-      wedOpen: true
+      wedOpen: false
       wedOpenAt: 10h00
       wedClosedAt: 17h00
     thursday:
@@ -32,7 +35,7 @@ intro:
       friOpenAt: 10h00
       friClosedAt: 17h00
     saturday:
-      satOpen: true
+      satOpen: false
       satOpenAt: 10h00
       satClosedAt: 17h00
     sunday:
@@ -45,12 +48,11 @@ storeUsps:
     text: Ondanks onze lage prijzen bieden we allen de beste merken, zoals .. en ..
     title: De beste merken
   usp2:
-    text:
-      U krijg de volledige aandacht om de juiste tuinmeubelen de kopen die bij
+    text: U krijg de volledige aandacht om de juiste tuinmeubelen de kopen die bij
       uw situatie passen. De koffie staat klaar!
     title: Brabantse gemoedelijkheid
   usp1:
-    text: Door onze inkoopstrategie zijn we goedkoper dan andere bekende tuincentra.
+    text: Door onze inkoopstrategie zijn we goedkoper dan andere bekende tuincentra
     title: Super goedkoop
 latestMessages:
   messages:
