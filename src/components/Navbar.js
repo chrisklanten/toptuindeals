@@ -52,11 +52,11 @@ const Navbar = class extends React.Component {
         role="navigation"
         aria-label="main-navigation"
       >
-        <div className="menuContainer justify-center mx-auto block sm:flex items-center px-6 lg:px-0">
-          <div className="navbar-brand flex items-center">
+        <div className="menuContainer justify-center mx-auto flex md:items-center px-6 lg:px-0">
+          <div className="navbar-brand flex order-2 ml-auto mt-4 md:mt-0">
             {/* Hamburger menu */}
             <div
-              className={`ml-auto sm:hidden ${this.state.navBarActiveClass}`}
+              className={`ml-auto md:hidden ${this.state.navBarActiveClass}`}
               data-target="navMenu"
               role="button"
               tabIndex={"0"}
@@ -68,51 +68,52 @@ const Navbar = class extends React.Component {
           </div>
           <div
             id="navMenu"
-            className={`justify-center flex ${this.state.navBarActiveClass}`}
+            className={`w-full justify-center flex ${this.state.navBarActiveClass}`}
           >
-            <div className="navbar-start has-text-centered flex items-center">
-              <div>
+            <div className="navbar-start has-text-centered flex flex-col md:flex-row md:items-center justify-center w-full">
+              <div className="order-2 md:order-1">
                 <Link
-                  className="navbar-item px-3 pt-4 sm:pt-0 font-bold text-toptuindeals-darkgreen"
+                  className="navbar-item px-3 md:pt-0 font-bold text-toptuindeals-darkgreen my-0"
                   to="/#openingstijden"
                   onClick={this.onLinkClick}
                 >
                   Openingstijden
                 </Link>
                 <Link
-                  className="navbar-item px-3 font-bold text-toptuindeals-darkgreen"
+                  className="navbar-item px-3 font-bold text-toptuindeals-darkgreen my-0"
                   to="/#over"
                   onClick={this.onLinkClick}
                 >
                   Over TopTuindeals
                 </Link>
               </div>
-              <div className="-mb-16">
+              <div className="md:-mb-16 md:order-2">
                 <Link to="/" onClick={this.onLinkClick} title="Logo">
                   <img
                     src={logo}
                     alt="TopTuinDeals Oudenbosch"
-                    className="w-32 md:w-40 "
+                    className="w-16 md:w-40 "
                   />
                 </Link>
               </div>
-              <div>
+              <div className="order-2 md:order-3">
                 <Link
-                  className="navbar-item px-3 font-bold text-toptuindeals-darkgreen"
-                  to="/over-evisie"
+                  className="navbar-item px-3 font-bold text-toptuindeals-darkgreen my-0"
+                  to="/#nieuws"
+                  onClick={this.onLinkClick}
                 >
                   Laatste nieuws
                 </Link>
                 <Link
                   onClick={this.onLinkClick}
-                  className="navbar-item rounded py-2 pyx-4 font-bold text-toptuindeals-darkgreen"
+                  className="navbar-item rounded md:py-2 pyx-4 font-bold text-toptuindeals-darkgreen my-0"
                   to="/#route"
                 >
                   Route
                 </Link>
                 <Link
                   onClick={this.onLinkClick}
-                  className="navbar-item rounded py-2 pyx-4 font-bold text-toptuindeals-darkgreen"
+                  className="navbar-item rounded md:py-2 pyx-4 font-bold text-toptuindeals-darkgreen my-0"
                   to="/#contact"
                 >
                   Contact

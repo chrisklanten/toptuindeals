@@ -2,15 +2,25 @@
 
 h1,
 .h1 {
-  @apply text-5xl leading-tight my-4;
+  @apply text-4xl leading-tight my-3;
+
+  @screen md {
+    @apply text-5xl leading-tight my-4;
+  }
 }
 h2,
 .h2 {
-  @apply text-4xl leading-tight my-4;
+  @apply text-3xl leading-tight my-3;
+  @screen md {
+    @apply text-4xl leading-tight my-4;
+  }
 }
 h3,
 .h3 {
-  @apply text-3xl leading-tight my-4;
+  @apply text-2xl leading-tight my-3;
+  @screen md {
+    @apply text-3xl leading-tight my-4;
+  }
 }
 h4,
 h5,
@@ -18,7 +28,10 @@ h6,
 .h4,
 .h5,
 .h6 {
-  @apply text-2xl leading-tight my-4;
+  @apply text-xl leading-tight my-3;
+  @screen md {
+    @apply text-2xl leading-tight my-4;
+  }
 }
 a {
   @apply text-blue-600 underline;
@@ -46,7 +59,7 @@ h6 {
     @apply underline;
   }
 }
-@screen sm {
+@screen md {
   .navbar-item {
     @apply inline-block px-4 py-0;
   }
@@ -59,7 +72,7 @@ h6 {
     @apply px-0;
   }
 
-  @screen sm {
+  @screen md {
     .navbar-item {
       @apply inline-block;
       @apply my-0;
@@ -107,8 +120,18 @@ h6 {
   max-width: 170px;
 }
 
-.review {
-  max-width: 325px;
+.location {
+  @screen sm {
+    height: 375px;
+  }
+}
+
+.location-card {
+  @screen sm {
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 
 .swiper-container {
@@ -181,28 +204,4 @@ h6 {
 
 .menuContainer {
   width: 100%;
-}
-
-@media (min-width: 640px) {
-  .menuContainer {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .menuContainer {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .menuContainer {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .menuContainer {
-    max-width: 1120px;
-  }
 }

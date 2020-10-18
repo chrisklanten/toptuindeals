@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby + Netlify CMS Starter",
+    title:
+      "TopTuinDeals | Unieke boomstamtafels en de mooiste tuinmeubelen in Oudenbosch!",
     description:
-      "This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.",
+      "Unieke boomstamtafels en de mooiste tuinmeubelen voor binnen en buiten vind je bij TopTuinDeals in Oudenbosch. U bent van harte welkom, de koffie staat klaar!",
   },
   plugins: [
     "gatsby-plugin-react-helmet",
