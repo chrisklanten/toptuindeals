@@ -1,18 +1,21 @@
 ---
 templateKey: index-page
 usps:
-  usp1: Prachtige showroom
-  usp2: De beste merken
+  usp1: 800 m2 showroom
+  usp2: " bekende merken"
   usp3: brabantse gemoedelijkheid
 intro:
   title: Welkom bij TopTuinDeals.
   text: >-
-    Bij Top Tuin Deals vind je de beste aanbiedingen op tuinmeubels voor binnen
-    én buiten. Ook bestaat ons assortiment uit massieve boomstamtafels voor
-    binnen en buiten, waardoor uw tuin, terras of overkapping er weer als nieuw
-    bij staat.
+    Bij TopTuinDeals vind je altijd topaanbiedingen op tuinmeubelen (dining en
+    lounge) en parasols. Verder bestaat ons assortiment uit massieve
+    boomstamtafels voor binnen en buiten met lengtes tot 5 m. We werken met o.a.
+    eiken, douglas en noten, goed gedroogd en vanaf 3 tot 6.5 cm. dik. Alle
+    houten tafels worden in overleg en naar keuze behandeld. Bent u op zoek naar
+    n mooie bank, bureau of boekenplank, deze maken we voor u op maat. Ook
+    hebben we wat leuke items in kleinmeubelen.
 
-    Bij uw bezoek krijgt u de volledige aandacht zodat we samen de beste tuinmeubelen voor uw situatie kunnen uit zoeken. We heten u van harte welkom, de koffie staat klaar!
+    Bij uw bezoek krijgt u de volledige aandacht zodat we samen de beste keuze voor uw situatie kunnen zoeken. We heten u van harte welkom, de koffie staat klaar!
   openinghours:
     monday:
       monOpen: false
