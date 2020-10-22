@@ -56,12 +56,12 @@ storeUsps:
     title: Super goedkoop
 latestMessages:
   messages:
-    - message: Nu tijdelijk 10% korting op onze boomstamtafels!
-      messageImage: /img/blog-index.jpg
     - message: Dit weekend korting
       messageImage: /img/3c861d85-c72b-4aa7-90c9-a62af5fd30d6.jpg
+    - message: Nu tijdelijk 10% korting op onze boomstamtafels!
+      messageImage: /img/blog-index.jpg
 location:
-  phone: 0165 502515
+  phone: 0165 502512 of 06 53 77 80 32
   address: Bosschendijk 140 4731 RD Oudenbosch
   intro: We zijn tijdelijk te gast bij de Plantenhal in Oudenbosch
   title: Waar kunt u TopTuinDeals vinden?
