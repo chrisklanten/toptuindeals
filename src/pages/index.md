@@ -43,7 +43,7 @@ intro:
       sunOpenAt: 10h00
       sunClosedAt: 17h00
 storeUsps:
-  uspImage: /img/3c861d85-c72b-4aa7-90c9-a62af5fd30d6.jpg
+  uspImage: /img/561e4704-e1e4-4aec-8916-0a02ec51aea2.jpeg
   usp3:
     text: Ondanks onze lage prijzen bieden we allen de beste merken, zoals .. en ..
     title: De beste merken
