@@ -48,15 +48,16 @@ intro:
 storeUsps:
   uspImage: /img/561e4704-e1e4-4aec-8916-0a02ec51aea2.jpeg
   usp3:
-    text: Ondanks onze lage prijzen bieden we allen de beste merken, zoals .. en ..
-    title: De beste merken
+    text: Ondanks onze lage prijzen bieden we alleen de beste merken, zoals
+      4-seasons,Taste, Tierra en SenS Line.
+    title: Bekende merken
   usp2:
-    text: U krijg de volledige aandacht om de juiste tuinmeubelen de kopen die bij
-      uw situatie passen. De koffie staat klaar!
+    text: U krijg de volledige aandacht om de juiste meubelen de kopen die bij uw
+      situatie passen. De koffie staat klaar!
     title: Brabantse gemoedelijkheid
   usp1:
-    text: Door onze inkoopstrategie zijn we goedkoper dan andere bekende tuincentra.
-    title: Super goedkoop
+    text: Door onze inkoopstrategie zijn we goedkoper dan andere verkooppunten.
+    title: Altijd voordelig.
 latestMessages:
   messages:
     - message: Dit weekend korting
