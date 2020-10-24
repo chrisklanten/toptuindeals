@@ -298,11 +298,13 @@ export const IndexPageTemplate = ({ frontmatter }) => {
           <div className="block sm:flex">
             {frontmatter.latestMessages.messages.map((message) => (
               <div className="w-full shadow-lg mb-4 sm:mb-0 sm:mr-8">
-                <PreviewCompatibleImage
-                  imageInfo={message.messageImage}
-                  className="rounded"
-                  imageStyle={{ height: "18rem" }}
-                />
+                {message.messageImage && (
+                  <PreviewCompatibleImage
+                    imageInfo={message.messageImage}
+                    className="rounded"
+                    imageStyle={{ height: "18rem" }}
+                  />
+                )}
 
                 <p className="py-3 px-5 font-bold text-center">
                   {message.message}
