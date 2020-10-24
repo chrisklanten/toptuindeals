@@ -2,7 +2,7 @@
 templateKey: index-page
 usps:
   usp1: 800 m2 showroom
-  usp2: "bekende merken"
+  usp2: bekende merken
   usp3: brabantse gemoedelijkheid
 intro:
   title: Welkom bij TopTuinDeals
@@ -55,14 +55,13 @@ impressions:
         - image: /img/561e4704-e1e4-4aec-8916-0a02ec51aea2.jpeg
         - image: /img/3c861d85-c72b-4aa7-90c9-a62af5fd30d6.jpg
 storeUsps:
-  uspImage: /img/561e4704-e1e4-4aec-8916-0a02ec51aea2.jpeg
+  uspImage: /img/90672363_2869855603081255_7203520918377725952_n.jpg
   usp3:
     text: Ondanks onze lage prijzen bieden we alleen de beste merken, zoals
       4-seasons,Taste, Tierra en SenS Line.
     title: Bekende merken
   usp2:
-    text:
-      U krijg de volledige aandacht om de juiste meubelen de kopen die bij uw
+    text: U krijg de volledige aandacht om de juiste meubelen de kopen die bij uw
       situatie passen. De koffie staat klaar!
     title: Brabantse gemoedelijkheid
   usp1:
