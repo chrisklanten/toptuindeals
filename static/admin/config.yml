@@ -67,6 +67,18 @@ collections:
                   ]},
                 ]}
               ]}
+
+          - {
+              label: Sfeerimpressie,
+              name: impressions,
+              widget: object,
+              fields: [
+                {label: Rij, name: row, widget: list, fields: [
+                  {label: Afbeeldingen, name: images, widget: list, fields: [
+                    {label: Afbeelding, name: image, widget: image},
+                  ]}
+                ]}
+              ]}
           - {
               label: Waarom TopTuinDeals?,
               name: storeUsps,

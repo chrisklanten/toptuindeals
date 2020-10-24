@@ -12,7 +12,7 @@ import ContactForm from "../pages/contact/index";
 import Layout from "../components/Layout";
 import MarkdownContent from "../components/MarkdownContent";
 
-export const IndexPageTemplate = ({ frontmatter }) => {
+export const IndexPageTemplate = ({ frontmatter, showImgDivs = false }) => {
   console.log(frontmatter);
 
   const today = new Date().getDay();
@@ -77,7 +77,7 @@ export const IndexPageTemplate = ({ frontmatter }) => {
                   >
                     {frontmatter.intro.openinghours.monday.monOpen
                       ? `${frontmatter.intro.openinghours.monday.monOpenAt} - ${frontmatter.intro.openinghours.monday.monClosedAt}`
-                      : `Gesloten`}
+                      : `gesloten`}
                   </p>
                 </li>
                 <li className="flex">
@@ -208,6 +208,8 @@ export const IndexPageTemplate = ({ frontmatter }) => {
         </div>
       </section>
 
+      <section className="impression">{}</section>
+
       <section className="bg-gray-200 py-10">
         <div className="container block md:flex">
           <div className="w-full">
@@ -255,14 +257,27 @@ export const IndexPageTemplate = ({ frontmatter }) => {
             </div>
           </div>
           <div className="w-full">
-            <Img
-              className="rounded w-full h-full"
-              fluid={
-                !!frontmatter.storeUsps.uspImage.childImageSharp
-                  ? frontmatter.storeUsps.uspImage.childImageSharp.fluid
-                  : frontmatter.storeUsps.uspImage
-              }
-            />
+            {showImgDivs ? (
+              <div
+                className="rounded w-full h-full"
+                style={{
+                  backgroundImage: `url(${
+                    !!frontmatter.storeUsps.uspImage.childImageSharp
+                      ? frontmatter.storeUsps.uspImage.childImageSharp.fluid
+                      : frontmatter.storeUsps.uspImage
+                  })`,
+                }}
+              ></div>
+            ) : (
+              <Img
+                className="rounded w-full h-full"
+                fluid={
+                  !!frontmatter.storeUsps.uspImage.childImageSharp
+                    ? frontmatter.storeUsps.uspImage.childImageSharp.fluid
+                    : frontmatter.storeUsps.uspImage
+                }
+              />
+            )}
           </div>
         </div>
       </section>
@@ -272,18 +287,35 @@ export const IndexPageTemplate = ({ frontmatter }) => {
           <h3 id="nieuws" className="pt-0 mt-0">
             Laatste nieuws
           </h3>
-          <div className="flex">
+          <div className="block sm:flex">
             {frontmatter.latestMessages.messages.map((message) => (
-              <div className="shadow-lg">
-                <Img
-                  className="rounded"
-                  fluid={
-                    !!message.messageImage.childImageSharp
-                      ? message.messageImage.childImageSharp.fluid
-                      : message.messageImage
-                  }
-                />
-                <p className="py-3 px-5 font-bold">{message.message}</p>
+              <div className="w-full shadow-lg mb-4 sm:mb-0 sm:mr-8">
+                {showImgDivs ? (
+                  <div
+                    className="rounded"
+                    style={{
+                      height: "18rem",
+                      backgroundImage: `url(${
+                        !!message.messageImage.childImageSharp
+                          ? message.messageImage.childImageSharp.fluid
+                          : message.messageImage
+                      })`,
+                    }}
+                  ></div>
+                ) : (
+                  <Img
+                    className="rounded"
+                    style={{ height: "18rem" }}
+                    fluid={
+                      !!message.messageImage.childImageSharp
+                        ? message.messageImage.childImageSharp.fluid
+                        : message.messageImage
+                    }
+                  />
+                )}
+                <p className="py-3 px-5 font-bold text-center">
+                  {message.message}
+                </p>
               </div>
             ))}
           </div>
@@ -456,6 +488,19 @@ export const pageQuery = graphql`
               sunOpen
               sunOpenAt
               sunClosedAt
+            }
+          }
+        }
+        impressions {
+          row {
+            images {
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 950, quality: 90) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
             }
           }
         }
