@@ -12,12 +12,9 @@ import ContactForm from "../pages/contact/index";
 import Layout from "../components/Layout";
 import MarkdownContent from "../components/MarkdownContent";
 
-export const IndexPageTemplate = ({ frontmatter, showImgDivs = false }) => {
+export const IndexPageTemplate = ({ frontmatter, showImgDivs = true }) => {
   console.log(frontmatter);
-
   const today = new Date().getDay();
-  console.log(today);
-
   return (
     <div>
       <section
@@ -208,7 +205,35 @@ export const IndexPageTemplate = ({ frontmatter, showImgDivs = false }) => {
         </div>
       </section>
 
-      <section className="impression">{}</section>
+      <section className="impression">
+        <div className="block">
+          {frontmatter.impressions.row.map((rowItem, index) => {
+            return (
+              <div className="flex">
+                {" "}
+                {rowItem.images.map((imageItem, index) => {
+                  return (
+                    <div
+                      key={index}
+                      className="rounded w-full h-full"
+                      style={{
+                        backgroundImage: `url(${
+                          !!imageItem.image.childImageSharp
+                            ? imageItem.image.childImageSharp.fluid.src
+                            : imageItem.image
+                        })`,
+                        backgroundPosition: `center center`,
+                        backgroundSize: `cover`,
+                        minHeight: `200px`,
+                      }}
+                    ></div>
+                  );
+                })}
+              </div>
+            );
+          })}
+        </div>
+      </section>
 
       <section className="bg-gray-200 py-10">
         <div className="container block md:flex">
@@ -261,9 +286,12 @@ export const IndexPageTemplate = ({ frontmatter, showImgDivs = false }) => {
               <div
                 className="rounded w-full h-full"
                 style={{
+                  backgroundPosition: `center center`,
+                  backgroundSize: `cover`,
+                  minHeight: `200px`,
                   backgroundImage: `url(${
                     !!frontmatter.storeUsps.uspImage.childImageSharp
-                      ? frontmatter.storeUsps.uspImage.childImageSharp.fluid
+                      ? frontmatter.storeUsps.uspImage.childImageSharp.fluid.src
                       : frontmatter.storeUsps.uspImage
                   })`,
                 }}
@@ -292,12 +320,12 @@ export const IndexPageTemplate = ({ frontmatter, showImgDivs = false }) => {
               <div className="w-full shadow-lg mb-4 sm:mb-0 sm:mr-8">
                 {showImgDivs ? (
                   <div
-                    className="rounded"
+                    className="rounded w-full"
                     style={{
                       height: "18rem",
                       backgroundImage: `url(${
                         !!message.messageImage.childImageSharp
-                          ? message.messageImage.childImageSharp.fluid
+                          ? message.messageImage.childImageSharp.fluid.src
                           : message.messageImage
                       })`,
                     }}
@@ -488,6 +516,19 @@ export const pageQuery = graphql`
               sunOpen
               sunOpenAt
               sunClosedAt
+            }
+          }
+        }
+        impressions {
+          row {
+            images {
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 950, quality: 90) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
             }
           }
         }
