@@ -491,19 +491,6 @@ export const pageQuery = graphql`
             }
           }
         }
-        impressions {
-          row {
-            images {
-              image {
-                childImageSharp {
-                  fluid(maxWidth: 950, quality: 90) {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-              }
-            }
-          }
-        }
         storeUsps {
           uspImage {
             childImageSharp {
