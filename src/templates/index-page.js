@@ -1,10 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
-import Img from "gatsby-image";
 import { FaCheck, FaFacebook, FaGoogle } from "react-icons/fa";
 
 import hero from "../img/toptuindeals_hero.jpg";
+import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 
 import { FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 
@@ -12,7 +12,7 @@ import ContactForm from "../pages/contact/index";
 import Layout from "../components/Layout";
 import MarkdownContent from "../components/MarkdownContent";
 
-export const IndexPageTemplate = ({ frontmatter, showImgDivs = true }) => {
+export const IndexPageTemplate = ({ frontmatter }) => {
   console.log(frontmatter);
   const today = new Date().getDay();
   return (
@@ -282,30 +282,10 @@ export const IndexPageTemplate = ({ frontmatter, showImgDivs = true }) => {
             </div>
           </div>
           <div className="w-full">
-            {showImgDivs ? (
-              <div
-                className="rounded w-full h-full"
-                style={{
-                  backgroundPosition: `center center`,
-                  backgroundSize: `cover`,
-                  minHeight: `200px`,
-                  backgroundImage: `url(${
-                    !!frontmatter.storeUsps.uspImage.childImageSharp
-                      ? frontmatter.storeUsps.uspImage.childImageSharp.fluid.src
-                      : frontmatter.storeUsps.uspImage
-                  })`,
-                }}
-              ></div>
-            ) : (
-              <Img
-                className="rounded w-full h-full"
-                fluid={
-                  !!frontmatter.storeUsps.uspImage.childImageSharp
-                    ? frontmatter.storeUsps.uspImage.childImageSharp.fluid
-                    : frontmatter.storeUsps.uspImage
-                }
-              />
-            )}
+            <PreviewCompatibleImage
+              imageInfo={frontmatter.storeUsps.uspImage}
+              className="rounded w-full h-full"
+            />
           </div>
         </div>
       </section>
@@ -318,29 +298,12 @@ export const IndexPageTemplate = ({ frontmatter, showImgDivs = true }) => {
           <div className="block sm:flex">
             {frontmatter.latestMessages.messages.map((message) => (
               <div className="w-full shadow-lg mb-4 sm:mb-0 sm:mr-8">
-                {showImgDivs ? (
-                  <div
-                    className="rounded w-full"
-                    style={{
-                      height: "18rem",
-                      backgroundImage: `url(${
-                        !!message.messageImage.childImageSharp
-                          ? message.messageImage.childImageSharp.fluid.src
-                          : message.messageImage
-                      })`,
-                    }}
-                  ></div>
-                ) : (
-                  <Img
-                    className="rounded"
-                    style={{ height: "18rem" }}
-                    fluid={
-                      !!message.messageImage.childImageSharp
-                        ? message.messageImage.childImageSharp.fluid
-                        : message.messageImage
-                    }
-                  />
-                )}
+                <PreviewCompatibleImage
+                  imageInfo={message.messageImage}
+                  className="rounded"
+                  imageStyle={{ height: "18rem" }}
+                />
+
                 <p className="py-3 px-5 font-bold text-center">
                   {message.message}
                 </p>

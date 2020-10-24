@@ -2,10 +2,10 @@
 templateKey: index-page
 usps:
   usp1: 800 m2 showroom
-  usp2: " bekende merken"
+  usp2: "bekende merken"
   usp3: brabantse gemoedelijkheid
 intro:
-  title: Welkom bij TopTuinDeals.
+  title: Welkom bij TopTuinDeals
   text: >-
     Bij TopTuinDeals vind je altijd topaanbiedingen op tuinmeubelen (dining en
     lounge) en parasols. Verder bestaat ons assortiment uit massieve
@@ -61,7 +61,8 @@ storeUsps:
       4-seasons,Taste, Tierra en SenS Line.
     title: Bekende merken
   usp2:
-    text: U krijg de volledige aandacht om de juiste meubelen de kopen die bij uw
+    text:
+      U krijg de volledige aandacht om de juiste meubelen de kopen die bij uw
       situatie passen. De koffie staat klaar!
     title: Brabantse gemoedelijkheid
   usp1:

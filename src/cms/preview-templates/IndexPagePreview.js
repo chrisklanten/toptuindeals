@@ -6,7 +6,7 @@ const IndexPagePreview = ({ entry, getAsset }) => {
   const data = entry.getIn(["data"]).toJS();
 
   if (data) {
-    return <IndexPageTemplate frontmatter={data} showImgDivs={true} />;
+    return <IndexPageTemplate frontmatter={data} />;
   } else {
     return <div>Loading...</div>;
   }
