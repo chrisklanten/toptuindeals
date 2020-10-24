@@ -45,6 +45,15 @@ intro:
       sunOpen: false
       sunOpenAt: 10h00
       sunClosedAt: 17h00
+impressions:
+  row:
+    - images:
+        - image: /img/3c861d85-c72b-4aa7-90c9-a62af5fd30d6.jpg
+        - image: /img/561e4704-e1e4-4aec-8916-0a02ec51aea2.jpeg
+    - images:
+        - image: /img/blog-index.jpg
+        - image: /img/561e4704-e1e4-4aec-8916-0a02ec51aea2.jpeg
+        - image: /img/3c861d85-c72b-4aa7-90c9-a62af5fd30d6.jpg
 storeUsps:
   uspImage: /img/561e4704-e1e4-4aec-8916-0a02ec51aea2.jpeg
   usp3:
