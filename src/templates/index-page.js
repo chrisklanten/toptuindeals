@@ -218,9 +218,11 @@ export const IndexPageTemplate = ({ frontmatter }) => {
                       className="rounded w-full h-full"
                       style={{
                         backgroundImage: `url(${
-                          !!imageItem.image.childImageSharp
-                            ? imageItem.image.childImageSharp.fluid.src
-                            : imageItem.image
+                          imageItem.image
+                            ? imageItem.image.childImageSharp
+                              ? imageItem.image.childImageSharp.fluid.src
+                              : imageItem.image
+                            : null
                         })`,
                         backgroundPosition: `center center`,
                         backgroundSize: `cover`,
