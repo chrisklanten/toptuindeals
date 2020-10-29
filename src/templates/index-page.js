@@ -211,26 +211,27 @@ export const IndexPageTemplate = ({ frontmatter }) => {
             return (
               <div className="flex">
                 {" "}
-                {rowItem.images.map((imageItem, index) => {
-                  return (
-                    <div
-                      key={index}
-                      className="rounded w-full h-full"
-                      style={{
-                        backgroundImage: `url(${
-                          imageItem.image
-                            ? imageItem.image.childImageSharp
-                              ? imageItem.image.childImageSharp.fluid.src
-                              : imageItem.image
-                            : null
-                        })`,
-                        backgroundPosition: `center center`,
-                        backgroundSize: `cover`,
-                        minHeight: `200px`,
-                      }}
-                    ></div>
-                  );
-                })}
+                {rowItem.images &&
+                  rowItem.images.map((imageItem, index) => {
+                    return (
+                      <div
+                        key={index}
+                        className="rounded w-full h-full"
+                        style={{
+                          backgroundImage: `url(${
+                            imageItem.image
+                              ? imageItem.image.childImageSharp
+                                ? imageItem.image.childImageSharp.fluid.src
+                                : imageItem.image
+                              : null
+                          })`,
+                          backgroundPosition: `center center`,
+                          backgroundSize: `cover`,
+                          minHeight: `200px`,
+                        }}
+                      ></div>
+                    );
+                  })}
               </div>
             );
           })}
