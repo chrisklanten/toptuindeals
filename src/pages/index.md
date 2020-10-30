@@ -58,6 +58,7 @@ impressions:
     - images:
         - image: /img/img_4540.jpg
         - image: /img/img_4514.jpg
+        - image: /img/img_4518.jpg
 storeUsps:
   uspImage: /img/90672363_2869855603081255_7203520918377725952_n.jpg
   usp3:
