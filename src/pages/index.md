@@ -48,9 +48,9 @@ intro:
 impressions:
   row:
     - images:
+        - image: /img/3c861d85-c72b-4aa7-90c9-a62af5fd30d6.jpg
         - image: /img/boomstam-3.jpg
         - image: /img/347614c7-6eab-42eb-8f43-9e8eb489c828.jpg
-        - image: /img/3c861d85-c72b-4aa7-90c9-a62af5fd30d6.jpg
     - images:
         - image: /img/3c861d85-c72b-4aa7-90c9-a62af5fd30d6.jpg
         - image: /img/chemex.jpg
