@@ -74,8 +74,8 @@ storeUsps:
     title: Altijd voordelig.
 latestMessages:
   messages:
-    - message: Dit weekend korting
-      messageImage: /img/347614c7-6eab-42eb-8f43-9e8eb489c828.jpg
+    - message: Nieuw gearriveerd.
+      messageImage: /img/img_4513.jpg
     - message: Nu tijdelijk 10% korting op onze boomstamtafels!
       messageImage: /img/blog-index.jpg
 location:
