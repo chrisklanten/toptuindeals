@@ -76,8 +76,8 @@ latestMessages:
   messages:
     - message: Nieuw gearriveerd.
       messageImage: /img/img_4513.jpg
-    - message: Nu tijdelijk 10% korting op onze boomstamtafels!
-      messageImage: /img/blog-index.jpg
+    - message: Nieuw gearriveerd.
+      messageImage: /img/img_4537.jpg
 location:
   phone: 0165 502512 of 06 53 77 80 32
   address: Bosschendijk 140 4731 RD Oudenbosch
