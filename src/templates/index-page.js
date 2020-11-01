@@ -216,7 +216,7 @@ export const IndexPageTemplate = ({ frontmatter }) => {
                     return (
                       <div
                         key={index}
-                        className="rounded w-full h-full"
+                        className=" w-full h-full border-b-8 border-white"
                         style={{
                           backgroundImage: `url(${
                             imageItem.image
