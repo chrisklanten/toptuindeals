@@ -14,12 +14,26 @@ import MarkdownContent from "../components/MarkdownContent";
 
 export const IndexPageTemplate = ({ frontmatter }) => {
   const [today, setToday] = useState(new Date().getDay());
+  const [lightboxActive, setLightboxActive] = useState(false);
+  const [backgroundImage, setBackgroundImage] = useState(null);
 
   useEffect(() => {
     setToday(new Date().getDay());
   }, []);
 
-  console.log(frontmatter);
+  const openLightbox = (e, backgroundImage) => {
+    setBackgroundImage(backgroundImage);
+    setLightboxActive(true);
+  };
+
+  const closeLightbox = (e) => {
+    setLightboxActive(false);
+  };
+
+  const lightboxClass = lightboxActive
+    ? "fixed p-10 z-50 top-0 w-full h-full bg-black bg-opacity-75 transition duration-500 ease-in-out flex justify-center items-center"
+    : "fixed p-10 z-50 top-0 w-full h-full bg-black bg-opacity-75 transition duration-500 ease-in-out hidden";
+
   return (
     <div>
       <section
@@ -222,6 +236,16 @@ export const IndexPageTemplate = ({ frontmatter }) => {
                       <div
                         key={index}
                         className=" w-full h-full border-b-8 border-white"
+                        onClick={(e) => {
+                          openLightbox(
+                            e,
+                            imageItem.image
+                              ? imageItem.image.childImageSharp
+                                ? imageItem.image.childImageSharp.fluid.src
+                                : imageItem.image
+                              : null
+                          );
+                        }}
                         style={{
                           backgroundImage: `url(${
                             imageItem.image
@@ -406,6 +430,11 @@ export const IndexPageTemplate = ({ frontmatter }) => {
           </div>
         </div>
       </section>
+      <div id="lightbox" onClick={closeLightbox} className={lightboxClass}>
+        {backgroundImage && (
+          <img className="max-w-full max-h-full" src={backgroundImage} />
+        )}
+      </div>
     </div>
   );
 };
