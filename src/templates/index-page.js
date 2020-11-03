@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import { FaCheck, FaFacebook, FaGoogle } from "react-icons/fa";
@@ -13,8 +13,13 @@ import Layout from "../components/Layout";
 import MarkdownContent from "../components/MarkdownContent";
 
 export const IndexPageTemplate = ({ frontmatter }) => {
+  const [today, setToday] = useState(new Date().getDay());
+
+  useEffect(() => {
+    setToday(new Date().getDay());
+  }, []);
+
   console.log(frontmatter);
-  const today = new Date().getDay();
   return (
     <div>
       <section
