@@ -48,17 +48,17 @@ intro:
 impressions:
   row:
     - images:
-        - image: /img/3c861d85-c72b-4aa7-90c9-a62af5fd30d6.jpg
         - image: /img/boomstam-3.jpg
+        - image: /img/3c861d85-c72b-4aa7-90c9-a62af5fd30d6.jpg
         - image: /img/347614c7-6eab-42eb-8f43-9e8eb489c828.jpg
     - images:
-        - image: /img/img_4527.jpg
-        - image: /img/img_4523.jpg
         - image: /img/img_4530.jpg
+        - image: /img/img_4523.jpg
+        - image: /img/img_4527.jpg
     - images:
-        - image: /img/img_4540.jpg
         - image: /img/img_4514.jpg
         - image: /img/img_4518.jpg
+        - image: /img/img_4540.jpg
 storeUsps:
   uspImage: /img/90672363_2869855603081255_7203520918377725952_n.jpg
   usp3:
