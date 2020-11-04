@@ -13,12 +13,14 @@ import Layout from "../components/Layout";
 import MarkdownContent from "../components/MarkdownContent";
 
 export const IndexPageTemplate = ({ frontmatter }) => {
-  const [today, setToday] = useState(new Date().getDay());
+  const [today, setToday] = useState(false);
   const [lightboxActive, setLightboxActive] = useState(false);
   const [backgroundImage, setBackgroundImage] = useState(null);
 
   useEffect(() => {
-    setToday(new Date().getDay());
+    if (today === false) {
+      setToday(new Date().getDay());
+    }
   }, []);
 
   const openLightbox = (e, backgroundImage) => {
@@ -74,7 +76,6 @@ export const IndexPageTemplate = ({ frontmatter }) => {
               <h3 id="openingstijden" className="font-bold mb-0 mt-0">
                 Openingstijden deze week
               </h3>
-              <p className="text-gray-500 mb-4">We heten u van harte welkom</p>
               <ul>
                 <li className="flex">
                   <p
