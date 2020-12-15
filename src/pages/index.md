@@ -22,23 +22,23 @@ intro:
       monOpenAt: "10.00"
       monClosedAt: "17.00"
     tuesday:
-      tueOpen: true
+      tueOpen: false
       tueOpenAt: "10.00"
       tueClosedAt: "17.00"
     wednesday:
-      wedOpen: true
+      wedOpen: false
       wedOpenAt: "10.00"
       wedClosedAt: "17.00"
     thursday:
-      thurOpen: true
+      thurOpen: false
       thurOpenAt: "10.00"
       thurClosedAt: "17.00"
     friday:
-      friOpen: true
+      friOpen: false
       friOpenAt: "10.00"
       friClosedAt: "17.00"
     saturday:
-      satOpen: true
+      satOpen: false
       satOpenAt: "10.00"
       satClosedAt: "17.00"
     sunday:
