@@ -13,6 +13,7 @@ import Layout from "../components/Layout";
 import MarkdownContent from "../components/MarkdownContent";
 
 export const IndexPageTemplate = ({ frontmatter }) => {
+  console.log(frontmatter);
   const [today, setToday] = useState(false);
   const [lightboxActive, setLightboxActive] = useState(false);
   const [backgroundImage, setBackgroundImage] = useState(null);
@@ -223,6 +224,12 @@ export const IndexPageTemplate = ({ frontmatter }) => {
             </div>
           </div>
         </div>
+      </section>
+
+      <section className="extrainfo pt-0 pb-6 text-center">
+        <p className="max-w-lg italic mx-auto font-bold">
+          {frontmatter.extrainfo}
+        </p>
       </section>
 
       <section className="impression">
@@ -522,6 +529,7 @@ export const pageQuery = graphql`
             }
           }
         }
+        extrainfo
         impressions {
           row {
             images {
