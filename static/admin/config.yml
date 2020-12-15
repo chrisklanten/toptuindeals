@@ -21,7 +21,6 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
           - {label: USPS, name: usps, widget: object, fields: [{label: Usp 1, name: usp1, widget: string},{label: Usp 2, name: usp2, widget: string},{label: Usp 3, name: usp3, widget: string}]}
-
           - {
               label: Intro,
               name: intro,
