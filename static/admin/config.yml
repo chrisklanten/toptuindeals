@@ -67,7 +67,7 @@ collections:
                   ]},
                 ]}
               ]}
-
+          - {label: Extra Info, name: extrainfo, widget: text},
           - {
               label: Sfeerimpressie,
               name: impressions,
