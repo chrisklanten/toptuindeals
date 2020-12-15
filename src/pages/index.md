@@ -45,8 +45,9 @@ intro:
       sunOpen: false
       sunOpenAt: 10h00
       sunClosedAt: 17h00
-extrainfo: "Helaas zijn we genoodzaakt door de corona maatregelen onze deuren te
-  sluiten tot 19 januari 2021. We hopen u daarna weer te verwelkomen! "
+extrainfo: "Helaas zijn we door de aangescherpte corona maatregelen genoodzaakt
+  onze deuren te sluiten tot 19 januari 2021. We hopen u daarna weer te
+  verwelkomen! "
 impressions:
   row:
     - images:
