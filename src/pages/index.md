@@ -46,7 +46,7 @@ intro:
       sunOpenAt: 10h00
       sunClosedAt: 17h00
 extrainfo: "Helaas zijn we door de aangescherpte corona maatregelen genoodzaakt
-  onze deuren te sluiten tot 10 februari 2021. We hopen u daarna weer te
+  onze deuren te sluiten tot 2 maart 2021. We hopen u daarna weer te
   verwelkomen! "
 impressions:
   row:
