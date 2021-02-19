@@ -10,10 +10,10 @@ intro:
     Bij TopTuinDeals vind je altijd topaanbiedingen op tuinmeubelen (dining en
     lounge) en parasols. Verder bestaat ons assortiment uit massieve
     boomstamtafels voor binnen en buiten met lengtes tot 5 m. We werken met o.a.
-    eiken, douglas en noten, goed gedroogd en vanaf 3 tot 6.5 cm. dik. Alle
-    houten tafels worden in overleg en naar keuze behandeld. Bent u op zoek naar
-    n mooie bank, bureau of boekenplank, deze maken we voor u op maat. Ook
-    hebben we wat leuke items in kleinmeubelen.
+    eiken, douglas en noten, goed gedroogd en vanaf 3 tot 8 cm. dik. Alle houten
+    tafels worden in overleg en naar keuze behandeld. Bent u op zoek naar n
+    mooie bank, bureau of boekenplank, deze maken we voor u op maat. Ook hebben
+    we wat leuke items in kleinmeubelen.
 
     Bij uw bezoek krijgt u de volledige aandacht zodat we samen de beste keuze voor uw situatie kunnen zoeken. We heten u van harte welkom, de koffie staat klaar!
   openinghours:
