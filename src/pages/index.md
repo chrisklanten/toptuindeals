@@ -51,9 +51,9 @@ extrainfo: "Helaas zijn we door de aangescherpte corona maatregelen genoodzaakt
 impressions:
   row:
     - images:
-        - image: /img/boomstam-3.jpg
-        - image: /img/3c861d85-c72b-4aa7-90c9-a62af5fd30d6.jpg
-        - image: /img/347614c7-6eab-42eb-8f43-9e8eb489c828.jpg
+        - image: /img/img_7043.jpg
+        - image: /img/img_7035.jpg
+        - image: /img/img_7045.jpg
     - images:
         - image: /img/img_4530.jpg
         - image: /img/img_4523.jpg
