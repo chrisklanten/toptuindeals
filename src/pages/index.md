@@ -55,8 +55,8 @@ impressions:
         - image: /img/img_7035.jpg
         - image: /img/img_7045.jpg
     - images:
-        - image: /img/img_4530.jpg
-        - image: /img/img_4523.jpg
+        - image: /img/img_4528.jpg
+        - image: /img/boomstam-3.jpg
         - image: /img/img_4527.jpg
     - images:
         - image: /img/img_4514.jpg
