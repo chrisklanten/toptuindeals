@@ -80,7 +80,7 @@ latestMessages:
     - message: Nieuw gearriveerd.
       messageImage: /img/img_7033.jpg
     - message: Nieuw gearriveerd.
-      messageImage: /img/img_5569.jpg
+      messageImage: /img/img_7041.jpg
 location:
   phone: 0165 502512 of 06 53 77 80 32
   address: Bosschendijk 140 4731 RD Oudenbosch
