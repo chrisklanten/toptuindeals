@@ -78,7 +78,7 @@ storeUsps:
 latestMessages:
   messages:
     - message: Nieuw gearriveerd.
-      messageImage: /img/fc8084e5-f1b6-4f4e-bfee-3f2857b666a0.jpg
+      messageImage: /img/img_7033.jpg
     - message: Nieuw gearriveerd.
       messageImage: /img/img_5569.jpg
 location:
