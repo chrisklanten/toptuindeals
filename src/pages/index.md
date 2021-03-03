@@ -22,23 +22,23 @@ intro:
       monOpenAt: "10.00"
       monClosedAt: "17.00"
     tuesday:
-      tueOpen: false
+      tueOpen: true
       tueOpenAt: "10.00"
       tueClosedAt: "17.00"
     wednesday:
-      wedOpen: false
+      wedOpen: true
       wedOpenAt: "10.00"
       wedClosedAt: "17.00"
     thursday:
-      thurOpen: false
+      thurOpen: true
       thurOpenAt: "10.00"
       thurClosedAt: "17.00"
     friday:
-      friOpen: false
+      friOpen: true
       friOpenAt: "10.00"
       friClosedAt: "17.00"
     saturday:
-      satOpen: false
+      satOpen: true
       satOpenAt: "10.00"
       satClosedAt: "17.00"
     sunday:
@@ -46,7 +46,7 @@ intro:
       sunOpenAt: 10h00
       sunClosedAt: 17h00
 extrainfo: |
-  Graag verwelkomen wij u weer (op afspraak) vanaf 3 maart.
+  Graag verwelkomen wij u weer (op telefonische afspraak) vanaf 3 maart.
   We kunnen niet wachten om heel veel moois met u te delen.
 impressions:
   row:
