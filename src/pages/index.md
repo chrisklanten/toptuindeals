@@ -46,7 +46,7 @@ intro:
       sunOpenAt: 10h00
       sunClosedAt: 17h00
 extrainfo: |
-  Graag verwelkomen wij u weer (op telefonische afspraak) vanaf 3 maart.
+  Graag verwelkomen wij u weer (op telefonische afspraak) 
   We kunnen niet wachten om heel veel moois met u te delen.
 impressions:
   row:
