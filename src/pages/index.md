@@ -46,6 +46,7 @@ intro:
       sunOpenAt: 10h00
       sunClosedAt: 17h00
 extrainfo: |
+  tweede paasdag extra geopend van 10 tot 17.00 uur.
   Graag verwelkomen wij u weer (op telefonische afspraak) 
   We kunnen niet wachten om heel veel moois met u te delen.
 impressions:
