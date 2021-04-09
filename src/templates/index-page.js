@@ -383,7 +383,7 @@ export const IndexPageTemplate = ({ frontmatter }) => {
               <a
                 target="_blank"
                 className="no-underline text-black font-bold flex items-center"
-                href="tel:+31627201455"
+                href="tel:+31653778032"
                 rel="noreferrer"
               >
                 {frontmatter.location.phone}
