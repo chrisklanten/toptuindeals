@@ -10,10 +10,10 @@ intro:
     Bij TopTuinDeals vind je altijd topaanbiedingen op tuinmeubelen (dining en
     lounge) en parasols. Verder bestaat ons assortiment uit massieve
     boomstamtafels voor binnen en buiten met lengtes tot 5 m. We werken met o.a.
-    eiken, douglas en noten, goed gedroogd en vanaf 3 tot 6.5 cm. dik. Alle
-    houten tafels worden in overleg en naar keuze behandeld. Bent u op zoek naar
-    n mooie bank, bureau of boekenplank, deze maken we voor u op maat. Ook
-    hebben we wat leuke items in kleinmeubelen.
+    eiken, douglas en noten, goed gedroogd en vanaf 3 tot 8 cm. dik. Alle houten
+    tafels worden in overleg en naar keuze behandeld. Bent u op zoek naar n
+    mooie bank, bureau of boekenplank, deze maken we voor u op maat. Ook hebben
+    we wat leuke items in kleinmeubelen.
 
     Bij uw bezoek krijgt u de volledige aandacht zodat we samen de beste keuze voor uw situatie kunnen zoeken. We heten u van harte welkom, de koffie staat klaar!
   openinghours:
@@ -22,40 +22,42 @@ intro:
       monOpenAt: "10.00"
       monClosedAt: "17.00"
     tuesday:
-      tueOpen: false
+      tueOpen: true
       tueOpenAt: "10.00"
       tueClosedAt: "17.00"
     wednesday:
-      wedOpen: false
+      wedOpen: true
       wedOpenAt: "10.00"
       wedClosedAt: "17.00"
     thursday:
-      thurOpen: false
+      thurOpen: true
       thurOpenAt: "10.00"
       thurClosedAt: "17.00"
     friday:
-      friOpen: false
+      friOpen: true
       friOpenAt: "10.00"
       friClosedAt: "17.00"
     saturday:
-      satOpen: false
+      satOpen: true
       satOpenAt: "10.00"
       satClosedAt: "17.00"
     sunday:
       sunOpen: false
       sunOpenAt: 10h00
       sunClosedAt: 17h00
-extrainfo: "Helaas zijn we genoodzaakt door de corona maatregelen onze deuren te
-  sluiten tot 19 januari 2021. We hopen u daarna weer te verwelkomen! "
+extrainfo: |
+  tweede paasdag extra geopend van 10 tot 17.00 uur.
+  Graag verwelkomen wij u weer (op telefonische afspraak) 
+  We kunnen niet wachten om heel veel moois met u te delen.
 impressions:
   row:
     - images:
-        - image: /img/boomstam-3.jpg
-        - image: /img/3c861d85-c72b-4aa7-90c9-a62af5fd30d6.jpg
-        - image: /img/347614c7-6eab-42eb-8f43-9e8eb489c828.jpg
+        - image: /img/img_7043.jpg
+        - image: /img/img_7035.jpg
+        - image: /img/img_7045.jpg
     - images:
-        - image: /img/img_4530.jpg
-        - image: /img/img_4523.jpg
+        - image: /img/img_4528.jpg
+        - image: /img/boomstam-3.jpg
         - image: /img/img_4527.jpg
     - images:
         - image: /img/img_4514.jpg
@@ -77,9 +79,9 @@ storeUsps:
 latestMessages:
   messages:
     - message: Nieuw gearriveerd.
-      messageImage: /img/img_4513.jpg
+      messageImage: /img/img_7033.jpg
     - message: Nieuw gearriveerd.
-      messageImage: /img/img_4537.jpg
+      messageImage: /img/img_7041.jpg
 location:
   phone: 0165 502512 of 06 53 77 80 32
   address: Bosschendijk 140 4731 RD Oudenbosch
