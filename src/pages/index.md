@@ -47,7 +47,7 @@ intro:
       sunClosedAt: 17h00
 extrainfo: |
   
-  Graag verwelkomen wij u weer (op telefonische afspraak) 
+  Graag verwelkomen wij u weer (na telefonische afspraak) 
   We kunnen niet wachten om heel veel moois met u te delen.
 impressions:
   row:
