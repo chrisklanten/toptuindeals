@@ -47,8 +47,9 @@ intro:
       sunClosedAt: 17h00
 extrainfo: |
   
-  Graag verwelkomen wij u weer (na telefonische afspraak) 
+  Graag verwelkomen wij u weer!
   We kunnen niet wachten om heel veel moois met u te delen.
+  2de pinksterdag open van 10 tot 17.00.
 impressions:
   row:
     - images:
