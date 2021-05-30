@@ -45,11 +45,12 @@ intro:
       sunOpen: false
       sunOpenAt: 10h00
       sunClosedAt: 17h00
-extrainfo: |
+extrainfo: |+
   
   Graag verwelkomen wij u weer!
-  We kunnen niet wachten om heel veel moois met u te delen.
-  2de pinksterdag open van 10 tot 17.00.
+  Vanaf juni 2021 dinsdag en woensdag alleen op afspraak!
+  We kunnen niet wachten om heel veel moois te laten zien.
+
 impressions:
   row:
     - images:
