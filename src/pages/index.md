@@ -47,9 +47,9 @@ intro:
       sunClosedAt: 17h00
 extrainfo: |+
   
-  Graag verwelkomen wij u weer!
+
   Vanaf juni 2021 dinsdag en woensdag alleen op afspraak!
-  We kunnen niet wachten om heel veel moois te laten zien.
+  Donderdag t/m zaterdag van 10 tot 17.00.
 
 impressions:
   row:
