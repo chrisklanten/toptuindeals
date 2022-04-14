@@ -18,7 +18,7 @@ intro:
     Bij uw bezoek krijgt u de volledige aandacht zodat we samen de beste keuze voor uw situatie kunnen zoeken. We heten u van harte welkom, de koffie staat klaar!
   openinghours:
     monday:
-      monOpen: false
+      monOpen: true
       monOpenAt: "10.00"
       monClosedAt: "17.00"
     tuesday:
@@ -48,7 +48,7 @@ intro:
 extrainfo: |+
   
 
-  Vanaf juni 2021 dinsdag en woensdag alleen op afspraak!
+  dinsdag en woensdag alleen op afspraak!
   Donderdag t/m zaterdag van 10 tot 17.00.
 
 impressions:
