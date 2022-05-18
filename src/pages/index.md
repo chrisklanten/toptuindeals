@@ -18,7 +18,7 @@ intro:
     Bij uw bezoek krijgt u de volledige aandacht zodat we samen de beste keuze voor uw situatie kunnen zoeken. We heten u van harte welkom, de koffie staat klaar!
   openinghours:
     monday:
-      monOpen: true
+      monOpen: false
       monOpenAt: "10.00"
       monClosedAt: "17.00"
     tuesday:
