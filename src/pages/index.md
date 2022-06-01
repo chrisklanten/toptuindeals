@@ -18,7 +18,7 @@ intro:
     Bij uw bezoek krijgt u de volledige aandacht zodat we samen de beste keuze voor uw situatie kunnen zoeken. We heten u van harte welkom, de koffie staat klaar!
   openinghours:
     monday:
-      monOpen: false
+      monOpen: true
       monOpenAt: "10.00"
       monClosedAt: "17.00"
     tuesday:
@@ -69,7 +69,7 @@ storeUsps:
   uspImage: /img/90672363_2869855603081255_7203520918377725952_n.jpg
   usp3:
     text: Ondanks onze lage prijzen bieden we alleen de beste merken, zoals
-      4-seasons,Taste, Tierra en SenS Line.
+      4-seasons,Taste, Hartman en SenS Line.
     title: Bekende merken
   usp2:
     text: U krijg de volledige aandacht om de juiste meubelen de kopen die bij uw
